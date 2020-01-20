@@ -46,6 +46,8 @@ while True:
                 'BATTV': float(ups.get('BATTV', 0.0)),
                 'OUTPUTV': float(ups.get('OUTPUTV', 0.0)),
                 'ITEMP': float(ups.get('ITEMP', 0.0)),
+                'LINEV': float(ups.get('LINEV', 0.0)),
+                'LINEFREQ': float(ups.get('LINEFREQ', 0.0)),
             },
             'tags': {
                 'host': os.getenv('HOSTNAME', ups.get('HOSTNAME', 'apcupsd-influxdb-exporter')),
